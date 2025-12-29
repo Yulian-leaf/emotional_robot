@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+ENV/
+.env/
+.env.*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Temp outputs / uploads / extracted frames
+temp/
+static/temp/
+
+# Logs
+*.log
+
+# HuggingFace / model caches & checkpoints (re-downloadable)
+wav2vec2_checkpoints/
+**/.cache/
+
+# Large model weights (keep configs/tokenizers; re-download weights when needed)
+models/**/model.safetensors
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+
+# Large datasets (keep only small metadata files)
+data/audio_RAVDESS/
+data/img_FER/
+data/MELD/
+data/txt_Emotional_Dataset/
+
+# Optional local dataset copies
+# eMotions_local/  # uncomment if this folder is large and reproducible

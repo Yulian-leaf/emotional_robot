@@ -1,0 +1,20 @@
+# 训练/微调用依赖（不一定用于线上推理）
+# 建议在 conda env 里安装：pip install -r requirements-train.txt
+
+transformers>=4.35
+scikit-learn>=1.2
+numpy>=1.23
+pandas>=2.0
+
+# audio
+torchaudio
+
+# vision
+torchvision
+pillow
+
+# (torch 通常由 conda/pip 单独安装，按你的 CUDA/CPU 版本选择)
+
+# 注意：本仓库当前环境 soundfile / libsndfile.dll 存在缺失问题，
+# 会导致 `datasets` / `evaluate` 以及 transformers.Trainer 相关导入失败。
+# 我们的训练脚本已避免依赖这些库。
