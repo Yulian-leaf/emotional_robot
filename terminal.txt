@@ -1,0 +1,4 @@
+PowerShell -ExecutionPolicy Bypass -File "D:\python-learn\program\scripts\start_frontend.ps1" -Port 3000 -Host 127.0.0.1
+
+
+uvicorn backend.app:app --reload --host 0.0.0.0 --port 8000 --log-level debug
